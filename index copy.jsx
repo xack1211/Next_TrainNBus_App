@@ -899,7 +899,7 @@ export default function App() {
             onClick={() => setActiveTab('home')}
             className={`flex flex-col items-center gap-1 ${activeTab === 'home' ? 'text-indigo-600 dark:text-indigo-400' : 'text-gray-400 hover:text-gray-600'}`}
           >
-            <Sun size={24} strokeWidth={activeTab === 'home' ? 2.5 : 2} />
+            <Sun size={24} strokeWidth={activeTab === 'home' ? 2.5 : 2} />x
             <span className="text-[10px] font-medium">Home</span>
           </button>
           
