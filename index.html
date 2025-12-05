@@ -12,53 +12,7 @@
     </style>
   </head>
   <body>
-    <div id="root" class="container">
-      <h1>Next_TrainNBus_App</h1>
-      <p class="notice">This is a minimal static entry file. The React app source lives in <code>index.jsx</code> and needs to be built or run with a dev server to work in the browser.</p>
-
-      <h2>Quick start (recommended)</h2>
-      <p>Use Vite for a simple dev server. Run these commands in the project folder:</p>
-      <pre>
-npm init -y
-npm install react react-dom lucide-react
-npm install -D vite
-
-// add to package.json "scripts": { "dev": "vite" }
-npm run dev
-      </pre>
-
-      <h2>If you have a built bundle</h2>
-      <p>If you build your app into <code>/dist/main.js</code>, this page will attempt to load it automatically.</p>
-
-      <div id="status" style="margin-top:18px;color:#334155"></div>
-    </div>
-
-    <script type="module">
-      const status = document.getElementById('status');
-
-      // Dev-first: try to load the source module `/index.jsx` (works when using Vite/dev server).
-      // If that fails (no dev server), fall back to a built bundle at `/dist/main.js`.
-      import('/index.jsx')
-        .then((m) => {
-          status.textContent = 'Loaded /index.jsx (dev mode)';
-          // If the module exported a mount function, call it
-          if (m && typeof m.default === 'function') {
-            try { m.default(); } catch (e) { console.warn(e); }
-          }
-        })
-        .catch(() => {
-          // Try built bundle
-          import('/dist/main.js')
-            .then((m) => {
-              status.textContent = 'Loaded /dist/main.js (production bundle)';
-              if (m && typeof m.default === 'function') {
-                try { m.default(); } catch (e) { console.warn(e); }
-              }
-            })
-            .catch(() => {
-              status.innerHTML = 'No module found at <code>/index.jsx</code> or <code>/dist/main.js</code>. Run the dev server (see instructions above) or build the project.';
-            });
-        });
-    </script>
+    <div id="root"></div>
+    <script type="module" src="/main.jsx"></script>
   </body>
 </html>
