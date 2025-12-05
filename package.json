@@ -1,0 +1,28 @@
+{
+  "name": "next_trainnbus_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xack1211/Next_TrainNBus_App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xack1211/Next_TrainNBus_App/issues"
+  },
+  "homepage": "https://github.com/xack1211/Next_TrainNBus_App#readme",
+  "dependencies": {
+    "lucide-react": "^0.556.0",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1"
+  },
+  "devDependencies": {
+    "vite": "^7.2.6"
+  }
+}
